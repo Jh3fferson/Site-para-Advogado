@@ -75,6 +75,37 @@ p {
 }
 
 /* ========================= */
+/* HEADER                    */
+/* ========================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 40px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 15px 0;
+}
+
+.social-links a {
+  color: var(--cor-detalhes);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--cor-detalhes-clara);
+  text-decoration: underline;
+}
+
+/* ========================= */
 /* TOP-BAR                   */
 /* ========================= */
 .top-bar {
@@ -104,8 +135,8 @@ p {
   transition: color 0.3s ease;
 }
 
-.top-bar nav a:hover {
-  color: var(--cor-detalhes-clara);
+.top-bar nav a.ativo {
+  border-bottom: 2px solid var(--cor-detalhes);
 }
 
 /* ========================= */
@@ -151,7 +182,6 @@ p {
 #Inicio h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-
 }
 
 #Inicio .imagem {
@@ -195,7 +225,7 @@ p {
 
 
 /* ========================= */
-/* Sobre-Mim                  */
+/* Sobre-Mim                 */
 /* ========================= */
 
 #Sobre-Mim {
@@ -222,7 +252,7 @@ p {
 
 
 /* ========================= */
-/* Atuacao                  */
+/* Atuacao                   */
 /* ========================= */
 #Atuacao {
   display: flex;
@@ -285,7 +315,7 @@ p {
 }
 
 /* ========================= */
-/* CARREIRA                    */
+/* Carreira                  */
 /* ========================= */
 #Carreira {
   display: flex;
@@ -316,8 +346,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-
 }
 
 /* ========================= */
@@ -326,25 +354,18 @@ p {
 footer {
   margin-top: auto;
   width: 100%;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  padding: 15px 0;
+  height: 75px;
   background-color: var(--cor-secao);
-  border-top: 1px solid #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
 }
 
-.social-links a {
-  color: var(--cor-detalhes);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: var(--cor-detalhes-clara);
-  text-decoration: underline;
+footer .copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
 }

@@ -3,6 +3,7 @@ const secoes = document.querySelectorAll('.secao');
 const links = document.querySelectorAll('#top-bar nav a');
 const consulte = document.getElementById('consulta')
 
+
 consulte.addEventListener('click', function () {
   const email = "jheffersonmatias123@gmail.com";
   const subject = "Agendamento de consulta";
@@ -49,6 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
 links.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault(); // Evita o pulo automático
+    links.forEach(l => l.classList.remove("ativo"));
+    link.classList.add("ativo");
     const destino = link.getAttribute('href');
     mostrarSecao(destino);
   });
