@@ -5,7 +5,7 @@ const consulte = document.getElementById('consulta')
 
 
 consulte.addEventListener('click', function () {
-  const email = "jheffersonmatias123@gmail.com";
+  const email = "marcosadvmarcosadv@gmail.com";
   const subject = "Agendamento de consulta";
   const body = "Olá, gostaria de marcar uma consulta.";
 

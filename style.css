@@ -348,6 +348,11 @@ header {
   align-items: center;
 }
 
+#Carreira .bx-arrow-up-stroke{
+  font-size: 100px;
+  color: var(--cor-detalhes);
+}
+
 /* ========================= */
 /* FOOTER                    */
 /* ========================= */
