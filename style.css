@@ -348,7 +348,7 @@ header {
   align-items: center;
 }
 
-#Carreira .bx-arrow-up-stroke{
+#Carreira .bx-arrow-up-stroke {
   font-size: 100px;
   color: var(--cor-detalhes);
 }
@@ -373,4 +373,139 @@ footer .copyright {
   flex-direction: row;
   align-items: center;
   text-align: center;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE            */
+/* ========================= */
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .top-bar nav {
+    gap: 30px;
+    font-size: 16px;
+  }
+
+  #Inicio .item {
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+  }
+
+  #Inicio .imagem {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #Inicio img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  #Sobre-Mim .descricao {
+    width: 80%;
+  }
+
+  #Atuacao .atuacao-coluna {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  #Atuacao .item-linha {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 30px;
+  }
+
+  #Carreira .item {
+    width: 95%;
+    padding: 20px;
+  }
+
+  #Carreira .experiencia {
+    height: auto;
+    padding: 20px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  .top-bar nav {
+    gap: 30px;
+    font-size: 16px;
+  }
+
+  .top-bar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #Inicio .texto {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 10px;
+  }
+
+  #Inicio .left {
+    gap: 40px;
+    align-items: center;
+  }
+
+  #Inicio #consulta {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    font-size: 1em;
+  }
+
+  #Sobre-Mim .descricao {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #Atuacao .item-coluna {
+    max-width: 100%;
+  }
+
+  #Atuacao .item-topico {
+    height: auto;
+  }
+
+  #Carreira .experiencia {
+    width: 100%;
+    padding: 10px;
+  }
 }
