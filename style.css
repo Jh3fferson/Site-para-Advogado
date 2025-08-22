@@ -140,11 +140,6 @@ p {
   gap: 100px;
 }
 
-#Inicio button {
-  max-width: 125px;
-  height: 30px;
-}
-
 #Inicio .texto {
   display: flex;
   justify-content: left;
@@ -181,6 +176,23 @@ p {
   max-height: 600px;
   width: auto;
 }
+
+#Inicio #consulta {
+  background-color: var(--cor-detalhes);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: #ffffff;
+  max-width: 125px;
+  height: 30px;
+}
+
+#Inicio #consulta:hover {
+  background-color: var(--cor-detalhes-clara);
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
+}
+
 
 /* ========================= */
 /* Sobre-Mim                  */

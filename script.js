@@ -1,6 +1,17 @@
 const barra = document.getElementById('top-bar');
 const secoes = document.querySelectorAll('.secao');
 const links = document.querySelectorAll('#top-bar nav a');
+const consulte = document.getElementById('consulta')
+
+consulte.addEventListener('click', function () {
+  const email = "jheffersonmatias123@gmail.com";
+  const subject = "Agendamento de consulta";
+  const body = "Olá, gostaria de marcar uma consulta.";
+
+  const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailtoLink;
+});
 
 // Função para esconder todas as seções
 function esconderSecoes() {
