@@ -472,6 +472,16 @@ footer .copyright {
     padding-right: 20px;
   }
 
+  #Inicio {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #Inicio .item {
+    width: 90%;
+  }
+
+
   #Inicio .texto {
     max-width: 100%;
     text-align: center;
@@ -489,6 +499,10 @@ footer .copyright {
     max-width: 200px;
     height: 40px;
     font-size: 1em;
+  }
+
+  #Inicio img {
+    max-width: 200px;
   }
 
   #Sobre-Mim .descricao {
