@@ -1,5 +1,5 @@
 const barra = document.getElementById('top-bar');
-const secoes = document.querySelectorAll('.secoes');
+const secoes = document.querySelectorAll('.secao');
 const links = document.querySelectorAll('#top-bar nav a');
 
 // Função para esconder todas as seções
@@ -19,7 +19,7 @@ function mostrarSecao(id) {
   const secao = document.querySelector(id);
   if (secao) {
     setTimeout(() => {
-      secao.style.display = 'block';
+      secao.style.display = 'flex';
       secao.style.opacity = 0;
       setTimeout(() => {
         secao.style.opacity = 1;

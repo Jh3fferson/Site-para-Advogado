@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* ========================= */
 /* VARIÁVEIS DE COR          */
 /* ========================= */
 :root {
-  --cor-background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  --cor-background: linear-gradient(225deg,
+      #162730d9 0%,
+      #162730d9 20%,
+      #1a3945 20%,
+      #1a3945 40%,
+      #203f48 40%,
+      #203f48 60%,
+      #223f4f 60%,
+      #223f4f 80%,
+      #244553 80%,
+      #244553 100%);
   --cor-secao: rgba(15, 32, 39, 0.85);
   --cor-detalhes: #1b98e0;
   --cor-detalhes-clara: #eac435;
@@ -16,7 +28,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -27,6 +39,39 @@ body {
   background: var(--cor-background);
   background-size: cover;
   color: #f5f5f5;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: var(--cor-detalhes);
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+h4 {
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #bbb;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #f0f0f0;
 }
 
 /* ========================= */
@@ -140,11 +185,11 @@ body {
 /* ========================= */
 /* Sobre-Mim                  */
 /* ========================= */
-/*
+
 #Sobre-Mim {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   min-height: 100vh;
   gap: 50px;
   padding: 50px 20px;
@@ -152,33 +197,17 @@ body {
   text-align: left;
 }
 
-#Sobre-Mim .sobre-coluna {
+#Sobre-Mim .descricao {
+  width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  flex: 1 1 250px;
-  max-width: 300px;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  border-radius: 20px;
+  padding: 40px;
 }
 
-#Sobre-Mim .sobre-topico {
-  padding: 15px;
-  background-color: var(--cor-secao);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  height: 400px;
-}
-
-#Sobre-Mim .sobre-topico h3 {
-  margin-bottom: 10px;
-  color: var(--cor-detalhes);
-}
-
-#Sobre-Mim .sobre-topico p {
-  color: #f0f0f0;
-  font-size: 0.95em;
-  line-height: 1.4em;
-}
-*\
 
 /* ========================= */
 /* Atuacao                  */
@@ -188,7 +217,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   min-height: 100vh;
   padding: 50px 20px;
   flex-wrap: wrap;
@@ -208,15 +237,15 @@ body {
   flex-direction: column;
   gap: 30px;
   flex: 1 1 250px;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 #Atuacao .item-linha {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 50px;
   flex: 1 1 250px;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 #Atuacao .item-topico {
@@ -224,7 +253,12 @@ body {
   background-color: var(--cor-secao);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  height: 250px;
+  height: 300px;
+}
+
+#Atuacao .item-topico:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
 }
 
 #Atuacao .item-topico h3 {
@@ -239,74 +273,39 @@ body {
 }
 
 /* ========================= */
-/* SEÇÕES GERAIS             */
+/* CARREIRA                    */
 /* ========================= */
-.secao {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: var(--cor-secao);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-.secao h1 {
-  font-size: 2em;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-.secao h2 {
-  font-size: 1.5em;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: var(--cor-detalhes);
-}
-
-.secao h3 {
-  font-size: 1.2em;
-  margin-top: 15px;
-  margin-bottom: 8px;
-  color: #ddd;
-}
-
-.secao h4 {
-  font-size: 1em;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  color: #bbb;
-}
-
-.secao p {
-  margin-bottom: 15px;
-  text-align: justify;
-  color: #f0f0f0;
-}
-
-.secao a {
-  color: var(--cor-detalhes);
-  text-decoration: none;
-}
-
-.secao a:hover {
-  color: var(--cor-detalhes-clara);
-  text-decoration: underline;
-}
-
-/* ========================= */
-/* PERFIL                    */
-/* ========================= */
-.perfil {
+#Carreira {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  min-height: 100vh;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
-.perfil img {
-  width: auto;
-  height: 50vh;
-  object-fit: cover;
-  border-radius: 8px;
+#Carreira .item {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: var(--cor-secao);
+}
+
+#Carreira .experiencia {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
 
 /* ========================= */
