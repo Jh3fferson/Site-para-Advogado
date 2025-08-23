@@ -1,15 +1,12 @@
 const barra = document.getElementById('top-bar');
 const secoes = document.querySelectorAll('.secao');
-const links = document.querySelectorAll('#top-bar nav a');
+const links = document.querySelectorAll('a');
 const consulte = document.getElementById('consulta')
 
 
 consulte.addEventListener('click', function () {
-  const email = "marcosadvmarcosadv@gmail.com";
-  const subject = "Agendamento de consulta";
-  const body = "Olá, gostaria de marcar uma consulta.";
 
-  const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const mailtoLink = `https://docs.google.com/forms/d/e/1FAIpQLSd8y_kR56n7sRV-JidMuqgRhFZQLCnvi9X0A_ToKinScXgB-g/viewform?usp=header`;
 
   window.location.href = mailtoLink;
 });
@@ -55,6 +52,25 @@ links.forEach(link => {
     const destino = link.getAttribute('href');
     mostrarSecao(destino);
   });
+});
+
+const saibaMais = document.getElementById('saiba-mais');
+
+saibaMais.addEventListener('click', function (e) {
+  e.preventDefault(); // impede o comportamento padrão do link
+
+  // Remove a classe ativo de todos os links
+  links.forEach(l => l.classList.remove("ativo"));
+
+  // Adiciona a classe ativo no link do menu correspondente
+  const linkAtuacao = document.querySelector('a[href="#Atuacao"]');
+  if (linkAtuacao) linkAtuacao.classList.add("ativo");
+
+  // Mostra a seção "Atuação"
+  mostrarSecao('#Atuacao');
+
+  // Scroll suave opcional
+  document.querySelector('#Atuacao').scrollIntoView({ behavior: 'smooth' });
 });
 
 // Script original da barra fixa

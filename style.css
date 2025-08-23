@@ -232,23 +232,54 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  gap: 50px;
-  padding: 50px 20px;
-  flex-wrap: wrap;
-  text-align: left;
+  padding: 80px 20px;
+  color: #f0f0f0;
 }
 
-#Sobre-Mim .descricao {
-  width: 40%;
+#Sobre-Mim .container-sobre {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  text-align: left;
-  border-radius: 20px;
-  padding: 40px;
+  max-width: 1200px;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
+#Sobre-Mim .foto-sobre img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+#Sobre-Mim .texto-sobre {
+  flex: 1;
+  min-width: 300px;
+}
+
+#Sobre-Mim .texto-sobre h1 {
+  color: var(--cor-detalhes);
+  margin-bottom: 20px;
+}
+
+#Sobre-Mim .texto-sobre p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+#Sobre-Mim .btn-consulta {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: var(--cor-detalhes);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#Sobre-Mim .btn-consulta:hover {
+  background-color: var(--cor-detalhes-clara);
+  transform: scale(1.05);
+}
+
 
 
 /* ========================= */
